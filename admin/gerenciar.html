@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciar Sistema</title>
+    <link rel="stylesheet" href="../sidebar.css">
+    <link rel="stylesheet" href="gerenciar.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="adminHome.html">🏠 Início</a></li>
+            <li><a href="campanhas.html">📢 Campanhas</a></li>
+            <li><a href="gerenciar.html">⚙️ Gerenciar</a></li>
+            <li><a href="../index.html" class="logout">🚪 Sair</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="title">
+            <h1>Gerenciar Instituiçoes Parceiras</h1>
+            <p>Acompanhe e administre as instituições que atuam no programa</p>
+        </div>
+
+        <a href="{{ url_for('novaInstituicao') }}" class="btn-add">+ Adicionar Nova Instituição</a>
+
+        <div class="lista-instituicoes">
+            <h2>Instituições Cadastradas</h2>
+        
+            instituicoes
+            <ul>
+        
+                <!-- Cabeçalho -->
+                <li class="header">
+                    <span>Nome da Instituição</span>
+                    <span>Tipo</span>
+                    <span>Localização</span>
+                    <span>Profissionais</span>
+                    <span>Status</span>
+                    <span>Ações</span>
+                </li>
+        
+                <!-- Linhas dinâmicas -->
+                
+                <li>
+                    <span>nome</span>
+                    <span>tipo</span>
+                    <span>localizacao</span>
+                    <span>inst.profissionais</span>
+                    <span>status</span>
+        
+                    <span class="acao-links">
+                        <a href="#">Editar</a> /
+                        <a href="#">Remover</a>
+                    </span>
+                </li>
+                {% endfor %}
+            </ul>
+        
+            <p class="total-instituicoes">
+                Total de instituições cadastradas: 10
+            </p>
+        
+            
+            <p>Nenhuma instituição cadastrada até o momento.</p>
+            
+        </div>
+        
+    </div>
+</body>
+
+</html>
