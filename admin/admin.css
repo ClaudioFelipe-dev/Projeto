@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
+  /* Container principal do conteúdo */
+
+
+/* Título */
+.tittle h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Container dos cards */
+/* Container dos cards */
+.dashboard { 
+  display: flex; 
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  gap: 50px; 
+  flex-wrap: wrap;
+}
+
+/* Card quadrado */
+.card {
+  width: 350px;
+  height: 300px;
+
+  background: #ffffff;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  margin: auto;
+}
+
+/* Texto */
+.card p {
+  font-size: 24px;
+  color: #444;
+}
+
+.card strong {
+  display: block;
+  font-size: 26px;
+  color: #8087FE;
+  margin-top: 5px;
+}
+
+/* Hover */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
