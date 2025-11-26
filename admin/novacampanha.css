@@ -1,0 +1,101 @@
+/* ===== Layout Geral ===== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+/* ===== Área de Conteúdo ===== */
+
+.content {
+    margin-left: 250px; /* espaço para a sidebar */
+    padding: 40px;
+    width: calc(100% - 250px);
+
+    /* CENTRALIZAÇÃO */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* horizontal */
+    justify-content: flex-start; /* mantém título em cima */
+    text-align: center; /* opcional */
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.subtitle {
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* ===== Cartão/Formulário ===== */
+
+.form-card {
+    margin-top: 20px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: left; /* manter labels alinhadas */
+}
+
+.form-card label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* ===== Botão Salvar ===== */
+
+.btn-submit {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* ===== Ajuste Responsivo ===== */
+
+@media (max-width: 800px) {
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-card {
+        max-width: 100%;
+    }
+}

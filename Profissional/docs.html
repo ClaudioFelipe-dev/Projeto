@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Profissional - Início</title>
+
+    <!-- CSS CORRETO NO FLASK -->
+    <link rel="stylesheet" href="../sidebar.css">
+    <link rel="stylesheet" href="docs.css">
+
+</head>
+<body>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="ProfissionalHome.html">📅 Agenda</a></li>
+            <li><a href="docs.html">📁 Artigos e Materias</a></li>
+            <li><a href="{{ url_for('logout') }}" class="logout">🚪 Sair</a></li>
+        </ul>
+    </nav>
+
+<div class="content">
+    <div class="title">
+        <h1>Artigos e Materiais Educativos</h1>
+        <p>Gerencie conteúdos de apoio que serão disponibilizados para famílias e jovens.</p>
+    </div> 
+    <a href="novoDoc.html" class="btn-add">+ Adicionar Novo Artigo</a>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome do Arquivo</th>
+                <th>Tipo</th>
+                <th>Data</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Guia de Estudos</td>
+                <td>PDF</td>
+                <td>20/11/2025</td>
+                <td>
+                    <button class="action-btn edit-btn">Editar</button>
+                    <button class="action-btn delete-btn">Excluir</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Manual Educativo</td>
+                <td>DOCX</td>
+                <td>21/11/2025</td>
+                <td>
+                    <button class="action-btn edit-btn">Editar</button>
+                    <button class="action-btn delete-btn">Excluir</button>
+                </td>
+            </tr>
+            <!-- Futuramente será populado via backend -->
+        </tbody>
+    
+</div>
+
+</body>
+</html>

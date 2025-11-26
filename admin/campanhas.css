@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .content {
+    width: 100%;
+    padding-top: 40px; /* distância do topo da página */
+    text-align: center; /* centraliza o conteúdo horizontalmente */
+}
+
+.title h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #8087FE;
+}
+
+.title p {
+    font-size: 16px;
+    color: #8087FE;
+}
+
+
+.btn-add {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #8087FE;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  
+    float: right;             /* alinhando à direita */
+    margin-right: 40px;       /* afastar um pouco da borda */
+  }
+  
+  /* Hover */
+  .btn-add:hover {
+    background-color: #8087FE;
+    transform: translateY(-2px);
+  }
+
+  .lista-campanhas {
+    width: 90%;
+    margin: 70px auto;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Título da seção */
+  .lista-campanhas h2 {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #5e6bff;
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  
+  /* Lista */
+  .lista-campanhas ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Cada linha */
+  .lista-campanhas li {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 14px 20px;
+    border-top: 1px solid #d6d6d6;
+    font-size: 15px;
+  }
+  
+  /* Cabeçalho da tabela */
+  .lista-campanhas .header {
+    background: #f7f9ff;
+    font-weight: bold;
+    border-bottom: 2px solid #d6d6d6;
+  }
+  
+  /* Ações */
+  .acao-links {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .acao-links a {
+    color: #5b63ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 4px;
+  }
+  
+  .acao-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Rodapé */
+  .total-campanhas {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #7a7ffe;
+  }
+
+  /* Já assumindo * e .content, .title e .btn-add do seu CSS base */
+
+/* Regras para lista/tabela (mesmas que instituicoes) */
+.lista-instituicoes {
+  width: 90%;
+  margin: 60px auto;
+  padding: 0;
+  border: 2px solid #7da6ff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.lista-instituicoes h2 {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #5e6bff;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.lista-instituicoes ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-instituicoes li {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1.5fr 1fr;
+  align-items: center;
+  padding: 14px 20px;
+  border-top: 1px solid #d6d6d6;
+  font-size: 15px;
+}
+
+.lista-instituicoes .header {
+  background: #f7f9ff;
+  font-weight: bold;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+.acao-links {
+  text-align: center;
+  font-size: 14px;
+}
+
+.acao-links a {
+  color: #5b63ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+/* Sessão de campanhas */
+.campanhas-lista {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.campanhas-lista h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* GRID CENTRALIZADO */
+.lista-campanhas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 25px;
+
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* CARD */
+.campanha-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.campanha-card h3 {
+  font-size: 20px;
+  color: #4a6cf7;
+  margin-bottom: 10px;
+}
+
+.campanha-card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Botão ver campanha */
+.btn-ver {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4a6cf7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.btn-ver:hover {
+  background-color: #3650c4;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Novo Documento</title>
+
+    <link rel="stylesheet" href="../sidebar.css">
+    <link rel="stylesheet" href="novoDoc.css">
+</head>
+
+<body>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="ProfissionalHome.html">📅 Agenda</a></li>
+            <li><a href="docs.html">📁 Artigos e Materias</a></li>
+            <li><a href="{{ url_for('logout') }}" class="logout">🚪 Sair</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+
+        <div class="center-box">
+            <div class="title">
+                <h1>Adicionar Novo Artigo</h1>
+                <p>Preencha os dados abaixo para cadastrar um novo material educativo.</p>
+            </div>
+    
+            <form class="form-box" method="POST" enctype="multipart/form-data">
+    
+                <label for="titulo">Título do Documento</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Digite o título..." required>
+    
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" placeholder="Descreva brevemente o conteúdo..." required></textarea>
+    
+                <label for="arquivo">Enviar Arquivo</label>
+                <input type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx,.ppt,.pptx" required>
+    
+                <div class="btn-area">
+                    <a href="docs.html" class="btn cancel">Cancelar</a>
+                    <button type="submit" class="btn save">Salvar</button>
+                </div>
+            </form>
+        </div>
+    
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Profissional - Início</title>
+
+    <!-- CSS CORRETO NO FLASK -->
+    <link rel="stylesheet" href="../sidebar.css">
+    <link rel="stylesheet" href="profissional.css">
+
+</head>
+<body>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="agenda.html">📅 Agenda</a></li>
+            <li><a href="docs.html">📁 Artigos e Materias</a></li>
+            <li><a href="{{ url_for('logout') }}" class="logout">🚪 Sair</a></li>
+        </ul>
+    </nav>
+
+<div class="content">
+    <div class="title">
+        <h1>Agenda de Atendimentos</h1>
+        <p>Visualize e gerencie seus compromissos com famílias e grupos de apoio.</p>
+    </div> 
+    <a href="/nova_instituicao" class="btn-add">+ a</a>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Instituição</th>
+                <th>Tipo de Atendimento</th>
+                <th>Responsável</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>22/11/2025</td>
+                <td>10:00</td>
+                <td>Escola ABC</td>
+                <td>Consulta individual</td>
+                <td>Dr. Fulano</td>
+            </tr>
+            <tr>
+                <td>23/11/2025</td>
+                <td>14:00</td>
+                <td>Grupo XYZ</td>
+                <td>Atendimento em grupo</td>
+                <td>Dra. Beltrana</td>
+            </tr>
+            <!-- Mais linhas podem ser adicionadas -->
+        </tbody>
+    </table>
+    
+</div>
+
+</body>
+</html>
